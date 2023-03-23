@@ -1,0 +1,24 @@
+server:
+  port: 8086
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDB103Dialect
+  datasource:
+    url: jdbc:mariadb://localhost:3306/binance
+    username: root
+    password: streaming
+    driver-class-name: org.mariadb.jdbc.Driver
+
+binance:
+  multiply: 100000000
+  api:
+    key: g0JCtSC3Pm8llxH6z7yBxmlUv2zsGfsABUwy8Eu1GgWTNCZEI1DIl9rwXr6c3Bav
+    secret: XUcNBW9EjLak3UmVBUbGiIiPXkOD8TSV4rbn36pOB4KK7XPbhnKHHMDNWExfay19
+
+
+
